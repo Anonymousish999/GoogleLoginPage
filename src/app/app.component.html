@@ -18,13 +18,18 @@
                         width="64px" />
                 </div>
                 <!-- register component -->
-                <div *ngIf="currentRoute === '/' ">
+                <div *ngIf="currentRoute === '/register' ">
                     <app-register><h1></h1></app-register>
                 </div>
 
                 <!-- login component -->
-                <div *ngIf="currentRoute === '/login'" style="margin-top: 12px;">
-                    <app-login><h1></h1></app-login>
+                <div *ngIf="currentRoute === '/'" style="margin-top: 12px;">
+                    <app-login></app-login>
+                </div>
+
+                <!-- password component -->
+                <div *ngIf="currentRoute === '/password'" style="margin-top: 12px;">
+                    <app-password></app-password>
                 </div>
             </div>
         </mat-card>

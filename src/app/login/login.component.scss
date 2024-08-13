@@ -1,5 +1,4 @@
 
-
 ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
     margin-bottom: -7px;
     margin-right: 20px !important;
@@ -20,6 +19,12 @@
  }
  .create-account:hover {
     cursor: pointer;
+ }
+ .forget:hover {
+    cursor: pointer;
+ }
+ .guest:hover {
+     cursor: pointer;
  }
 
  
