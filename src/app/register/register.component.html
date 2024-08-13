@@ -1,78 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  </style>
-</head>
-<body>
-  <div style="margin: 100px 200px;">
-    <mat-card class="registerBody" style="box-shadow: white;">
-      <div>
-        <div style="margin: 7px;">
-          <img src="../../assets/icons/Google_Icons-09-512.webp" alt="" srcset="" height="64px" width="64px" />
-        </div>
-        <div style="display: flex; justify-content: space-between">
-          <div>
-            <div>
-              <h1 style="font-size: 2.2rem; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 300; padding-left: 14px; font-size: 2.4rem;">Create
-                a Google Account</h1>
-            </div>
-            <span style="margin-left: 17px; font-size: 17px;">
-              Enter your name
-            </span>
-          </div>
-          <div>
-            <form action="submit">
-              <p style="height: 80px;">
-                <mat-form-field appearance="outline" style="width: 500px; font-size: 16px;">
-                  <mat-label>First name</mat-label>
-                  <input matInput placeholder="" />
-                </mat-form-field>
-              </p>
-              <p>
-                <mat-form-field appearance="outline" style="width: 500px; font-size: 16px;">
-                  <mat-label>Last name (optional)</mat-label>
-                  <input matInput placeholder="" />
-                </mat-form-field>
-              </p>
-              <div class="" style="display: flex; justify-content: end; text-align: center; font-weight: 400; margin-bottom: 30px; margin-right: 15px;">
-                <a
-                  style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;">
-                  <!-- <mat-icon>favorit</mat-icon> -->
-                  <span>Next</span>
-    
-                </a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </mat-card>
-    <div style="display: flex; justify-content: space-between;">
-      <div style="margin-top: 10px;">
-
-        <mat-form-field class="btm" appearance="fill" style="height: 2px;">
-          <mat-select [value]="'en-US'">
-            <mat-option class="opt" value="en-US">English (United States)</mat-option>
-            <mat-option class="opt" value="fr">French</mat-option>
-            <mat-option class="opt" value="de">German</mat-option>
-            <mat-option class="opt" value="it">Italian</mat-option>
-            <mat-option class="opt" value="es">Spanish</mat-option>
-            <mat-option class="opt" value="pt">Portuguese</mat-option>
-            <mat-option class="opt" value="ja">Japanese</mat-option>
-            <mat-option class="opt" value="ko">Korean</mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-      <div class="example-button-row" style="margin: 9px;">
-        <button mat-button ><span style="font-weight: 400; font-size: 12px; color: #1f1f1f;">Help</span></button>
-        <button mat-button><span style="font-weight: 400; font-size: 12px; color: #1f1f1f;">Privacy</span></button>
-        <button mat-button><span style="font-weight: 400; font-size: 12px; color: #1f1f1f;">Terms</span></button>
-      </div>
+<div style="display: flex; justify-content: space-between">
+  <div>
+    <div>
+      <h1
+        style="font-size: 2.2rem; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 300; padding-left: 14px; font-size: 2.4rem;">
+        Create
+        a Google Account</h1>
     </div>
+    <span style="margin-left: 17px; font-size: 17px;">
+      Enter your name
+    </span>
   </div>
-</body>
-</html>
+  <div>
+    <form action="submit">
+      <p style="height: 80px;">
+        <mat-form-field appearance="outline" style="width: 500px; font-size: 16px;">
+          <mat-label>First name</mat-label>
+          <input matInput placeholder="" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" style="width: 500px; font-size: 16px;">
+          <mat-label>Last name (optional)</mat-label>
+          <input matInput placeholder="" />
+        </mat-form-field>
+      </p>
+      <div class=""
+        style="display: flex; justify-content: end; text-align: center; font-weight: 400; margin-bottom: 30px; margin-right: 15px;">
+        <a
+          style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;">
+          <!-- <mat-icon>favorit</mat-icon> -->
+          <span>Next</span>
+
+        </a>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,5 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    
-<app-register></app-register>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
 
-    
+<body>
+    <div style="margin: 100px 200px;">
+        <mat-card class="registerBody" style="box-shadow: white;">
+            <div>
+                <div style="margin: 7px;">
+                    <img src="../../assets/icons/Google_Icons-09-512.webp" alt="" srcset="" height="64px"
+                        width="64px" />
+                </div>
+                <!-- register component -->
+                <div *ngIf="currentRoute === '/' ">
+                    <app-register><h1></h1></app-register>
+                </div>
+
+                <!-- login component -->
+                <div *ngIf="currentRoute === '/login'" style="margin-top: 12px;">
+                    <app-login><h1></h1></app-login>
+                </div>
+            </div>
+        </mat-card>
+        <div style="display: flex; justify-content: space-between; margin-top: 2px;">
+            <div style="margin-top: 10px;">
+
+                <mat-form-field class="btm" appearance="fill" style="height: 2px;">
+                    <mat-select [value]="'en-US'">
+                        <mat-option class="opt" value="en-US">English (United States)</mat-option>
+                        <mat-option class="opt" value="fr">French</mat-option>
+                        <mat-option class="opt" value="de">German</mat-option>
+                        <mat-option class="opt" value="it">Italian</mat-option>
+                        <mat-option class="opt" value="es">Spanish</mat-option>
+                        <mat-option class="opt" value="pt">Portuguese</mat-option>
+                        <mat-option class="opt" value="ja">Japanese</mat-option>
+                        <mat-option class="opt" value="ko">Korean</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="example-button-row" style="margin: 9px;">
+                <button mat-button><span style="font-weight: 400; font-size: 12px; color: #1f1f1f;">Help</span></button>
+                <button mat-button><span
+                        style="font-weight: 400; font-size: 12px; color: #1f1f1f;">Privacy</span></button>
+                <button mat-button><span
+                        style="font-weight: 400; font-size: 12px; color: #1f1f1f;">Terms</span></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
