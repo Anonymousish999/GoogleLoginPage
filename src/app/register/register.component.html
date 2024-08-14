@@ -11,7 +11,7 @@
     </span>
   </div>
   <div>
-    <form action="submit">
+    <!-- <form action="submit">
       <p style="height: 80px;">
         <mat-form-field appearance="outline" style="width: 500px; font-size: 16px;">
           <mat-label>First name</mat-label>
@@ -26,11 +26,33 @@
       </p>
       <div class=""
         style="display: flex; justify-content: end; text-align: center; font-weight: 400; margin-bottom: 30px; margin-right: 15px;">
-        <a routerLink =""
+        <a routerLink ="/password"
           style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;">
-          <!-- <mat-icon>favorit</mat-icon> -->
+        
           <span>Next</span>
 
+        </a>
+      </div>
+    </form> -->
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <p style="height: 80px;">
+        <mat-form-field appearance="outline" style="width: 500px; font-size: 16px;">
+          <mat-label>First name</mat-label>
+          <input matInput formControlName="firstName" placeholder="" />
+          <mat-error *ngIf="registerForm.get('firstName').hasError('required')">First name is required</mat-error>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" style="width: 500px; font-size: 16px;">
+          <mat-label>Last name (optional)</mat-label>
+          <input matInput formControlName="lastName" placeholder="" />
+        </mat-form-field>
+      </p>
+      <div class=""
+        style="display: flex; justify-content: end; text-align: center; font-weight: 400; margin-bottom: 30px; margin-right: 15px;">
+        <a routerLink="/password"
+          style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;">
+          <span>Next</span>
         </a>
       </div>
     </form>
